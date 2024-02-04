@@ -1,0 +1,163 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:700'); */
+:root {
+    --e-global-color-primary: #1e4187;
+    --e-global-color-secondary: #070052;
+    --e-global-color-text: #070052;
+    --e-global-color-accent: #ffde59;
+    --e-global-color-accent-2: #f9c908;
+    --e-global-color-hover: #e7bc12;
+    --e-global-color-4391e2b: #06a3dc;
+    --e-global-color-a1354c7: #f8f8f8;
+    --e-global-color-80d51d8: #ff9f64;
+    --e-global-color-1d37d34: #7a7a7a;
+    --e-global-color-1c847b4: #f8f8f8;
+    --e-global-color-766565b: #b7bbcb;
+    --e-global-color-3abf6aa: #f4f4f4;
+    --e-global-color-55e5603: #f2f8fd;
+    --e-global-color-a37b9b7: #c1c7c8;
+    --e-global-color-272b150: #c4d2de;
+    --e-global-color-6f7647a: #99afce;
+    --e-global-color-1b69f06: #7ed957;
+    --e-global-typography-primary-font-family: "Montserrat";
+    --e-global-typography-primary-font-size: 25px;
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-primary-line-height: 1em;
+    --e-global-typography-primary-letter-spacing: .5px;
+    --e-global-typography-secondary-font-family: "Montserrat";
+    --e-global-typography-secondary-font-size: 20px;
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-secondary-line-height: 1em;
+    --e-global-typography-text-font-family: "Quicksand";
+    --e-global-typography-text-font-size: 17px;
+    --e-global-typography-text-font-weight: 500;
+    --e-global-typography-text-line-height: 1.5em;
+    --e-global-typography-accent-font-family: "Montserrat";
+    --e-global-typography-accent-font-size: 16px;
+    --e-global-typography-accent-font-weight: 500;
+    --e-global-typography-accent-line-height: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    margin-top: 8%;
+}
+.all-text-color {
+    color: var(--e-global-color-text);
+}
+.h1-text{
+    color: var(--e-global-color-accent-2);
+}
+
+.container-c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container-c h1 {
+    /* font-size: 2.5rem !important; */
+    margin: 0;
+    padding: 0;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s linear infinite;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+.small-font{
+    font-size: 12px;
+}
+
+.icon-color{
+    color: var(--e-global-color-accent-2);
+    font-weight: 500;
+}
+
+.text-on:hover{
+    color: var(--e-global-color-text);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.button-outline-login {
+    color: var(--e-global-color-text) !important;
+    font-weight: 600;
+}
+
+.button-outline {
+    color: var(--e-global-color-text) !important;
+    border-color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-accent);
+    font-weight: 600;
+}
+
+.btn-primary{
+    background-color: var(--e-global-color-primary) !important;
+}
+
+
+/* media Query for Responsiveness */
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 950px) {
+    .animation
+    {
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .animation
+    {
+        height: 41px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .banner {
+        margin-top: 20%;
+    }
+    .dis-none{
+        display: none;
+    }
+    .animation
+    {
+      height: 35px;
+    }
+}
+
