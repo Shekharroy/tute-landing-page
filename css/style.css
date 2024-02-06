@@ -49,18 +49,21 @@
     height: 100vh;
     margin-top: 8%;
 }
+
 .all-text-color {
     color: var(--e-global-color-text);
 }
-.h1-text{
+
+.h1-text {
     color: var(--e-global-color-accent-2);
 }
 
 .container-c {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 .container-c h1 {
     /* font-size: 2.5rem !important; */
     margin: 0;
@@ -68,45 +71,77 @@
 }
 
 .animation {
-  height:50px;
-  overflow:hidden;
-  margin-left: 1rem;
+    height: 50px;
+    overflow: hidden;
+    margin-left: 1rem;
 }
 
-.animation > div > div {
-  padding: 0.25rem 0.75rem;
-  height:2.81rem;
-  margin-bottom: 2.81rem;
-  display:inline-block;
+.animation>div>div {
+    padding: 0.25rem 0.75rem;
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
 }
 
 .animation div:first-child {
-  animation: text-animation 8s linear infinite;
+    animation: text-animation 8s linear infinite;
 }
 
 @keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
-  70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+    0% {
+        margin-top: 0;
+    }
+
+    10% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: -5.62rem;
+    }
+
+    30% {
+        margin-top: -5.62rem;
+    }
+
+    40% {
+        margin-top: -11.24rem;
+    }
+
+    60% {
+        margin-top: -11.24rem;
+    }
+
+    70% {
+        margin-top: -5.62rem;
+    }
+
+    80% {
+        margin-top: -5.62rem;
+    }
+
+    90% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
+    }
 }
 
-.small-font{
+.small-font {
     font-size: 12px;
 }
 
-.icon-color{
+.icon-color {
     color: var(--e-global-color-accent-2);
     font-weight: 500;
 }
+/* .plus-icon-size {
+    font-size: 64px !important;
+} */
 
-.text-on:hover{
+.text-on:hover {
     color: var(--e-global-color-text);
     font-weight: 600;
     font-style: normal;
@@ -124,27 +159,93 @@
     font-weight: 600;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--e-global-color-primary) !important;
+}
+
+.counter-class {
+    margin-top: 5% !important;
+    width: 80%;
+}
+
+.custome-coulmn {
+    background-color: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.custome-coulmn:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+.lsit-of-school {
+    height: 100vh;
+    width: 100%;
+    margin-top: 18% !important;
+}
+
+.about-course {
+    height: 70vh;
+    width: 100%;
+    margin-top: 15% !important;
+}
+
+.our-courses {
+    height: 100vh;
+    width: 100%;
+    margin-top: 15% !important;
+}
+
+.browse-btn {
+    margin: 8rem 0 5rem !important;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
 /* media Query for Responsiveness */
 
-@media only screen and (max-width: 1200px) {
-
-}
+@media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 950px) {
-    .animation
-    {
+    .animation {
         height: 45px;
     }
+
+    .counter-class {
+        margin-top: 25%;
+    }
+
+    .lsit-of-school {
+        margin-top: 68% !important;
+    }
+
+    .about-course {
+        margin-top: 48% !important;
+    }
 }
+
 @media only screen and (max-width: 768px) {
-    .animation
-    {
+    .animation {
         height: 41px;
+    }
+
+    .lsit-of-school {
+        margin-top: 235% !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .animation {
+        height: 41px;
+    }
+
+    .lsit-of-school {
+        margin-top: 265% !important;
     }
 }
 
@@ -152,12 +253,47 @@
     .banner {
         margin-top: 20%;
     }
-    .dis-none{
+
+    .dis-none {
         display: none;
     }
-    .animation
-    {
-      height: 35px;
+
+    .animation {
+        height: 35px;
+    }
+
+    .lsit-of-school {
+        margin-top: 315% !important;
+    }
+
+    .about-course {
+        margin-top: 75% !important;
     }
 }
 
+@media only screen and (max-width: 450px) {
+
+    .about-course {
+        margin-top: 8% !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .lsit-of-school {
+        margin-top: 350% !important;
+    }
+
+    .about-course {
+        margin-top: 35% !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .lsit-of-school {
+        margin-top: 460% !important;
+    }
+
+    .about-course {
+        margin-top: 125% !important;
+    }
+}
