@@ -137,6 +137,7 @@
     color: var(--e-global-color-accent-2);
     font-weight: 500;
 }
+
 /* .plus-icon-size {
     font-size: 64px !important;
 } */
@@ -197,19 +198,89 @@
 .our-courses {
     height: 100vh;
     width: 100%;
-    margin-top: 15% !important;
+    margin-top: 5% !important;
 }
 
 .browse-btn {
-    margin: 8rem 0 5rem !important;
-    display: flex;
-    justify-content: flex-end;
+    height: 50px;
+    position: relative;
+    margin: auto;
+}
+
+/* custome-rating-star */
+.review-count {
+    font-weight: 400;
+    margin-bottom: 2px;
+    font-size: 24px !important;
+}
+
+.small-ratings i {
+    font-size: 12px;
+}
+
+.review-stat {
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.download-section {
+    height: auto;
+    width: 100%;
+    margin-top: 45% !important;
+}
+
+.dd-class {
+    height: auto !important;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--e-global-color-accent);
+    border-radius: 20px;
+}
+
+.footer-section {
+    height: auto;
+    width: 100%;
+    margin-top: 10%;
+    padding: 10px 0px;
 }
 
 
 /* media Query for Responsiveness */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+
+    .banner {
+       height: auto;
+    }
+
+    .lsit-of-school {
+        margin-top: 0px !important;
+        height: auto;
+    }
+
+    .about-course {
+        margin-top: 0px !important;
+        height: auto;
+    }
+
+    .our-courses {
+        margin-top: 0px !important;
+        height: auto;
+    }
+
+    .download-section {
+        margin-top: 0px !important;
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
+        width: 100%;
+    }
+
+}
 
 @media only screen and (max-width: 950px) {
     .animation {
@@ -221,11 +292,34 @@
     }
 
     .lsit-of-school {
-        margin-top: 68% !important;
+        height: auto;
     }
 
     .about-course {
-        margin-top: 48% !important;
+        height: auto;
+    }
+
+    .our-courses {
+        height: auto;
+    }
+
+    .browse-btn {
+        width: 50%;
+        height: 50px;
+    }
+
+    .download-section {
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .download-section {
+        height: auto;
     }
 }
 
@@ -235,7 +329,19 @@
     }
 
     .lsit-of-school {
-        margin-top: 235% !important;
+        height: auto;
+    }
+
+    .our-courses {
+        height: auto;
+    }
+
+    .download-section {
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
     }
 }
 
@@ -245,13 +351,29 @@
     }
 
     .lsit-of-school {
-        margin-top: 265% !important;
+        /* margin-top: 265% !important; */
+        height: auto;
+    }
+
+    .our-courses {
+        /* margin-top: 110% !important; */
+        height: auto;
+    }
+
+    .download-section {
+        /* margin-top: 525% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
     }
 }
 
 @media only screen and (max-width: 568px) {
     .banner {
         margin-top: 20%;
+        height: auto;
     }
 
     .dis-none {
@@ -263,37 +385,153 @@
     }
 
     .lsit-of-school {
-        margin-top: 315% !important;
+        /* margin-top: 315% !important; */
+        height: auto;
     }
 
     .about-course {
-        margin-top: 75% !important;
+        /* margin-top: 75% !important; */
+        height: auto;
     }
+
+    .our-courses {
+        /* margin-top: 140% !important; */
+        height: auto;
+    }
+
+    .browse-btn {
+        width: 72%;
+        height: 50px;
+    }
+
+    .download-section {
+        /* margin-top: 635% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
+    }
+
 }
 
 @media only screen and (max-width: 450px) {
 
     .about-course {
-        margin-top: 8% !important;
+        /* margin-top: 8% !important; */
+        height: auto;
+    }
+
+    .our-courses {
+        /* margin-top: 80% !important; */
+        height: auto;
+    }
+
+    .download-section {
+        /* margin-top: 635% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .our-courses {
+        /* margin-top: 110% !important; */
+        height: auto;
+    }
+
+    .download-section {
+        /* margin-top: 690% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .lsit-of-school {
-        margin-top: 350% !important;
+       height: auto;
     }
 
     .about-course {
-        margin-top: 35% !important;
+        /* margin-top: 35% !important; */
+        height: auto;
     }
+
+    .our-courses {
+        /* margin-top: 120% !important; */
+        height: auto;
+    }
+
+    .download-section {
+        /* margin-top: 700% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+
+    .our-courses {
+        /* margin-top: 140% !important; */
+        height: auto;
+    }
+
+    .download-section {
+        /* margin-top: 785% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    .download-section {
+        /* margin-top: 780% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {
     .lsit-of-school {
-        margin-top: 460% !important;
+        /* margin-top: 460% !important; */
+        height: auto;
     }
 
     .about-course {
-        margin-top: 125% !important;
+        /* margin-top: 125% !important; */
+        height: auto;
+    }
+
+    .our-courses {
+        /* margin-top: 215% !important; */
+        height: auto;
+    }
+
+    .download-section {
+        /* margin-top: 1000% !important; */
+        height: auto;
+    }
+
+    .dd-class {
+        height: auto !important;
     }
 }
